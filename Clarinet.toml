@@ -5,10 +5,25 @@ authors = []
 telemetry = true
 cache_dir = './.cache'
 requirements = []
+[contracts.alex-interface]
+path = 'contracts/alex-interface.clar'
+clarity_version = 3
+epoch = '3.1'
+
+[contracts.bitflow-interface]
+path = 'contracts/bitflow-interface.clar'
+clarity_version = 3
+epoch = 'latest'
+
 [contracts.swap-aggregator]
 path = 'contracts/swap-aggregator.clar'
 clarity_version = 3
-epoch = 'latest'
+epoch = '3.1'
+
+[contracts.velar-interface]
+path = 'contracts/velar-interface.clar'
+clarity_version = 3
+epoch = '3.1'
 [repl.analysis]
 passes = ['check_checker']
 
